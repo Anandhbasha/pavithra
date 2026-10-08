@@ -2025,26 +2025,41 @@
 // this-> same class current
 // super ->
 
-class Student{
-    stuName:string;
-    stuCourse:string;
-    studentAge:number;
-    constructor(sName:string,sAge:number,sCourse:string){
-        this.stuName = sName;
-        this.stuCourse = sCourse;
-        this.studentAge = sAge;
-    }
-    display():void{
-        console.log(this.stuName);
-        console.log(this.studentAge);
-        console.log(this.stuCourse);        
-    }
-}
+// class Student{
+//     stuName:string;
+//     stuCourse:string;
+//     studentAge:number;
+//     constructor(sName:string,sAge:number,sCourse:string){
+//         this.stuName = sName;
+//         this.stuCourse = sCourse;
+//         this.studentAge = sAge;
+//     }
+//     display():void{
+//         console.log(this.stuName);
+//         console.log(this.studentAge);
+//         console.log(this.stuCourse);        
+//     }
+// }
 
-let s1 = new Student("arun",22,"Python");
-s1.display();
+// let s1 = new Student("arun",22,"Python");
+// s1.display();
 
 
 // public
 // protected
 // public
+
+
+// for in
+let product = {
+    name:"laptop",
+    price:48000,
+    cat:"Electronics"
+}
+
+for(let key in product){
+    let value = key as keyof typeof product;
+    console.log(key,product[value]);
+     
+}
+
