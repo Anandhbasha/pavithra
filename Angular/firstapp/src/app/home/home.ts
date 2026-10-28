@@ -10,4 +10,8 @@ import { Component } from '@angular/core';
 export class Home {
   name="Anandh"
   course="Angular Training"
+
+  changeName(){
+    this.name="Kumar"
+  }
 }
