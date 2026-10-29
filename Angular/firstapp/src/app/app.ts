@@ -1,12 +1,13 @@
 import { Component } from "@angular/core";
 import { Home } from "./home/home";
 import { TwoWayPage } from "./two-way-page/two-way-page";
+import { Parent } from "./parent/parent";
 
 @Component(
   {
     selector:"app-root",
     standalone:true,
-    imports:[Home,TwoWayPage],
+    imports: [Parent],
     templateUrl:'./app.html',
     styleUrl:'./app.css'
   }
