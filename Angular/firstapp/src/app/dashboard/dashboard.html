@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Parent DashBoard</h2>
+    <app-counter #myCounter></app-counter>
+    <button (click)="myCounter.increment()">Increment</button>
+    <button (click)="myCounter.decrement()">Decrement</button>
+    <button (click)="myCounter.reset()">Reset</button>
+</body>
+</html>
