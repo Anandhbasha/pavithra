@@ -1,0 +1,8 @@
+<p>class-ng works!</p>
+<h2>StudentName:{{name}}</h2>
+<label>Enter Marks:</label>
+<input type="number" [(ngModel)]="marks" />
+<h3 [ngClass]="{
+    'pass': marks >= 35,
+    'fail': marks < 35
+}">{{marks>=35?'Pass':"Fail"}}</h3>

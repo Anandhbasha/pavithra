@@ -1,0 +1,22 @@
+<p>switch-order works!</p>
+<h3>Id:{{orderId}}</h3>
+<select [(ngModel)]="orderStatus">
+  <option value="pending">Pending</option>
+  <option value="failure">Processing</option>
+  <option value="sucess">Shipped</option>
+  <option value="Delivered">Delivered</option>
+</select>
+@switch (orderStatus) {
+    @case ('pending') {
+        <p>Order is Pending</p>
+    }
+    @case ('failure') {
+        <p>Order is failure</p>
+    }
+    @case ("sucess") {
+        <p>Order is Approved</p>
+    }
+    @default {
+        <p>Order is Processing</p>
+    }
+}

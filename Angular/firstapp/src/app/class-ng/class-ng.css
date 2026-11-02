@@ -1,0 +1,12 @@
+.pass{
+    color: green;
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 5px;
+}
+.fail{
+    color: red;
+    background-color: lightcoral;
+    padding: 15px;
+    border-radius: 5px;
+}

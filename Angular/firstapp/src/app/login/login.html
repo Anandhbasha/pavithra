@@ -1,0 +1,8 @@
+<p>login System</p>
+@if (!isLoggedIn) {
+  <button (click)="login()">Login</button>
+}
+@if (isLoggedIn) {
+    <p>Welcome, User! </p>
+    <button (click)="logout()">Logout</button>
+}
