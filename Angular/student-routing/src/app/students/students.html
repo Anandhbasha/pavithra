@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <table border="1" cellPadding="10">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+            @for (item of students; track item.id) {
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.course}}</td>
+                    <a [routerLink]="['/student',item.id]">View Details</a>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
