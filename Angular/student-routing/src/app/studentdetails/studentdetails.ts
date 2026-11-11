@@ -9,5 +9,10 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 })
 export class Studentdetails {
   private route = inject(ActivatedRoute)
-  studentId = this.route.snapshot.paramMap.get('id')
+  studentId:string|null = null;
+  constructor(){
+    this.route.paramMap.subscribe(params=>{
+      this.studentId = params.get('id')
+    })
+  }
 }
